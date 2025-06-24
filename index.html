@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quaddecimal Converter</title>
+  <title>Tetradecimal Converter</title>
   <style>
     body {
       font-family: monospace;
@@ -47,21 +47,21 @@
   </style>
 </head>
 <body>
-  <h1>🔣 Quaddecimal Converter</h1>
+  <h1>🔣 Tetradecimal Converter</h1>
   
   <select id="mode">
-    <option value="text2tri">Text → Quaddecimal</option>
-    <option value="tri2text">Quaddecimal → Text</option>
+    <option value="text2tri">Text → Tetradecimal</option>
+    <option value="tri2text">Tetradecimal → Text</option>
   </select>
 
-  <textarea id="input" rows="4" placeholder="Enter your text or quaddecimal string..."></textarea>
+  <textarea id="input" rows="4" placeholder="Enter your text or tetradecimal string..."></textarea>
 
   <button onclick="convert()">Convert</button>
 
   <div id="output"></div>
 
   <script>
-    const trilookup = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C","D];
+    const trilookup = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C","D"];
 
     function textToTridecimal(text) {
       let result = [];
